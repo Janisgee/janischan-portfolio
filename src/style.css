@@ -2,13 +2,13 @@
     --primary-font-family: "playfair display";
     --secondary-font-family: "poppins";
     --primary-background-color: #f9f7fe;
-    --button-background-color: #6c63ff;
+    --primary-button-color: #6c63ff;
     --button-border-radius: 4px;
     --subtitle-text-color: #272142;
 }
 
 body {
-    margin: 0;
+    max-width: 100%;
 }
 
 h1 {
@@ -33,18 +33,99 @@ p {
     line-height: 36px;
 }
 
+.button {
+    border-radius: var(--button-border-radius);
+    padding: 18px 30px;
+}
+
+.homepage-button {
+    background-color: var(--primary-button-color);
+    border: none;
+    color: white;
+    font-family: var(--secondary-font-family);
+    margin-top: 49px;
+}
+
+.sake-button,
+.weather-app-button {
+    font: var(--secondary-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid var(--primary-button-color);
+    margin-top: 20px;
+    background-color: white;
+    color: var(--primary-button-color);
+}
+
 .homepage {
     background-color: var(--primary-background-color);
     text-align: center;
     padding: 160px 20px;
 }
 
-.homepage-button {
-    background-color: var(--button-background-color);
+.homepage-middle-text {
+    text-align: center;
+    margin-top: 127px;
+    margin-bottom: 82px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.projects-group .sake-project-image,
+.weather-app-image {
+    width: 560px;
+    margin-bottom: 70px;
     border-radius: var(--button-border-radius);
-    border: none;
-    color: white;
+}
+
+.projects-group h2 {
+    font-family: var(--primary-font-family);
+    font-size: 64;
+}
+
+.projects-group p {
     font-family: var(--secondary-font-family);
-    padding: 18px 30px;
-    margin-top: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #272142;
+    opacity: 70%;
+    line-height: 30px;
+    margin-top: 55px;
+}
+
+.sake-project {
+    padding-left: 61px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 60px;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .homepage {
+        padding: 80px 0;
+    }
+    .homepage-button {
+        margin-top: 20px;
+    }
+    .projects-group p {
+        margin-top: 20px;
+    }
+    .sake-project,
+    .weather-app-project {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .homepage-middle-text {
+        margin: 50px 30px;
+    }
+    .sake-button,
+    .weather-app-button {
+        margin-top: 30px;
+    }
 }
