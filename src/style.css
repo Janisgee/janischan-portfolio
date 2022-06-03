@@ -37,42 +37,12 @@ p {
     max-width: 70px;
 }
 
-nav {
-    padding: 5px 0;
-    align-items: center;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    list-style: none;
-    margin-left: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: 700;
-    font-family: var(--secondary-font-family);
-    font-size: 16px;
-    color: #272142;
-    transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-    color: var(--primary-button-color);
-}
-
 .button {
     border-radius: var(--button-border-radius);
     padding: 18px 30px;
 }
 
-.homepage-button {
+.purple-button {
     background-color: var(--primary-button-color);
     border: none;
     color: white;
@@ -95,6 +65,10 @@ nav li.active a {
     background-color: var(--primary-background-color);
     text-align: center;
     padding: 160px 20px;
+}
+
+.homepage-subtitle {
+    padding-top: 40px;
 }
 
 .homepage-middle-text {
@@ -121,8 +95,7 @@ nav li.active a {
     font-family: var(--secondary-font-family);
     font-weight: 400;
     font-size: 16px;
-    color: #272142;
-    opacity: 70%;
+    color: #494559;
     line-height: 30px;
     margin-top: 55px;
 }
@@ -191,6 +164,101 @@ nav li.active a {
     opacity: 70%;
 }
 
+nav {
+    padding: 5px 0;
+    background: white;
+    position: fixed;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 15px;
+    padding-top: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-family: var(--secondary-font-family);
+    font-size: 16px;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--primary-button-color);
+}
+
+footer {
+    margin: 60px 0;
+}
+
+footer .email-link {
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+footer .email-link:hover {
+    color: var(--primary-button-color);
+}
+
+footer .social-links {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 30px;
+    margin-bottom: 142px;
+}
+
+footer .social-links a {
+    margin: 0 20px;
+    color: var(--primary-button-color);
+    background: var(--primary-background-color);
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: white;
+    background: var(--primary-button-color);
+}
+
+footer h4 {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+footer .contact-box {
+    background-color: var(--primary-background-color);
+    padding: 30px 120px;
+    margin-bottom: 81px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 60px;
@@ -199,13 +267,19 @@ nav li.active a {
     h2 {
         font-size: 35px;
     }
-    nav a {
-        font-size: 12px;
+    .logo {
+        max-width: 50px;
+    }
+    nav li {
+        padding-top: 15px;
     }
     .homepage {
         padding: 80px 0;
     }
-    .homepage-button {
+    .homepage-subtitle {
+        padding-top: 60px;
+    }
+    .purple-button {
         margin-top: 20px;
     }
     .projects-group p {
@@ -234,5 +308,19 @@ nav li.active a {
     .content-container .janis-image {
         width: 50vw;
         padding-top: 20px;
+    }
+    footer .contact-box {
+        padding: 30px;
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer h4 {
+        font-size: 40px;
+    }
+    footer p {
+        padding-top: 5px;
+        padding-bottom: 8px;
     }
 }
