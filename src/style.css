@@ -308,7 +308,11 @@ footer .contact-box {
     }
     .content-container {
         text-align: center;
-        padding: 80px;
+        padding: 80px 30px;
+    }
+    .content h1 {
+        font-size: 45px;
+        line-height: 1;
     }
     .content-container h2 {
         margin: 15px 0;
