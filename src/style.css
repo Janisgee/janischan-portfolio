@@ -50,6 +50,15 @@ p {
     margin-top: 49px;
 }
 
+.purple-button:hover,
+.sake-button:hover,
+.weather-app-button:hover,
+.about-button:hover {
+    color: white;
+    background: rgb(247, 105, 129);
+    border: none;
+}
+
 .sake-button,
 .weather-app-button {
     font: var(--secondary-font-family);
@@ -106,7 +115,7 @@ p {
 }
 
 .content-container {
-    padding: 160px 20px;
+    padding: 100px 20px;
 }
 
 .content {
@@ -161,12 +170,11 @@ p {
 
 .project-showcase p {
     font-size: 14px;
-    opacity: 70%;
 }
 
 nav {
     padding: 5px 0;
-    background: white;
+    background: var(--primary-background-color);
     position: fixed;
     width: 100%;
     padding: 5px 20px;
@@ -220,7 +228,7 @@ footer .social-links {
     text-align: center;
     margin-top: 40px;
     padding: 0 30px;
-    margin-bottom: 142px;
+    margin-bottom: 70px;
 }
 
 footer .social-links a {
@@ -300,7 +308,7 @@ footer .contact-box {
     }
     .content-container {
         text-align: center;
-        padding: 0;
+        padding: 80px;
     }
     .content-container h2 {
         margin: 15px 0;
